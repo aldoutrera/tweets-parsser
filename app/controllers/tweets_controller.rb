@@ -13,6 +13,7 @@ class TweetsController < ApplicationController
   end
 
   def index
-    @rssfeed_url = root_url
+    user = User.find(session[:user_id])
+    @rssfeed_url = "#{root_url}tweets/#{user.name}.rss"
   end
 end
