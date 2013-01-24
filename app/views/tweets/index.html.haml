@@ -1,6 +1,6 @@
-%h1 Tweets#index
-%p Find me in app/views/tweets/index.html.haml
+%h1 Congratulations, your Home Timeline was successfuly added.
 
-= session[:user_id]
-%pre
-    = @tweets
+%p
+    Add it to your favorite Rss Feed Reader using the following url:
+    = "#{@rssfeed_url}"
+
