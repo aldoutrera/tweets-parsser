@@ -1,6 +1,6 @@
 class TweetsController < ApplicationController
-  def index
-    user   = User.find_by_id(session[:user_id])
+  def show
+    user   = User.find_by_name(params[:id])
     client = Twitter::Client.new(
       :oauth_token => user.oauth_token,
       :oauth_token_secret => user.oauth_token_secret
@@ -10,5 +10,9 @@ class TweetsController < ApplicationController
       format.html # index.html.erb
       format.rss { render layout: false }
     end
+  end
+
+  def index
+    @rssfeed_url = root_url
   end
 end
