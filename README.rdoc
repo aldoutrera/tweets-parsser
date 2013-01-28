@@ -13,12 +13,13 @@ The new Twitter API 1.1 comes with no support for RSS, but this is not why I bui
 5. Copy your consumer key and pass from your Twitter app into omniauth.rb and twitter.rb located at <tt>config/initializers</tt>
 6. In the console <tt>rake db:migrate</tt>
 
-Heroku (optional, but recommended)
+=== Heroku (optional, but recommended)
 
-6. In the console <tt>heroku create</tt>
-7. In the console <tt>git push heroku</tt>
-8. In the console <tt>heroku run rake db:migrate</tt>
+Same steps as above, then:
 
+1. In the console <tt>heroku create</tt>
+2. In the console <tt>git push heroku</tt>
+3. In the console <tt>heroku run rake db:migrate</tt>
 
 == Use
 
