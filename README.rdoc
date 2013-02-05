@@ -2,7 +2,7 @@
 
 Tweets Parsser takes your Home Tweet Line and transforms it to a RSS Feed.
 
-The new Twitter API 1.1 comes with no support for RSS, but this is not why I built this. In a nutshell, I built it because I was finding a way to produce the read/unread status on my tweets. You can read more about my angle to built this app here[http://aldoutrera.pagodabox.com/posts/view/tweets-parsser].
+The new Twitter API 1.1 comes with no support for RSS, but this is not why I built this. In a nutshell, I built it because I was finding a way to produce the read/unread status on my tweets. You can read more about my angle to built this app here[http://aldoutrera.com/posts/view/tweets-parsser].
 
 == Warning
 
