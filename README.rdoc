@@ -2,7 +2,16 @@
 
 Tweets Parsser takes your Home Tweet Line and transforms it to a RSS Feed.
 
-The new Twitter API 1.1 comes with no support for RSS, but this is not why I built this. In a nutshell, I built it because I was finding a way to produce the read/unread status on my tweets. You can read more about my angle to built this app here.
+The new Twitter API 1.1 comes with no support for RSS, but this is not why I built this. In a nutshell, I built it because I was finding a way to produce the read/unread status on my tweets. You can read more about my angle to built this app here[http://aldoutrera.pagodabox.com/posts/view/tweets-parsser].
+
+== Warning
+
+Please note that since the web app is handling the authentification for Twitter, the parsed tweets from your Home Tweet Line would be public. Meaning that anyone with the url can easily read your parsed tweets. I personally don't find this as an issue, but you might, so I just wanted to warn you, if that is the case.
+== Demo
+
+Since the demo is hosted on a free node from Heroku there might be a slight startup lag, since all free nodes go to sleep after being idle for some time.
+
+You can use the demo at http://radiant-escarpment-4854.herokuapp.com
 
 == Installation
 
@@ -13,13 +22,12 @@ The new Twitter API 1.1 comes with no support for RSS, but this is not why I bui
 5. Copy your consumer key and pass from your Twitter app into omniauth.rb and twitter.rb located at <tt>config/initializers</tt>
 6. In the console <tt>rake db:migrate</tt>
 
-=== Heroku (optional, but recommended)
+Heroku (optional, but recommended)
 
-Same steps as above, then:
+6. In the console <tt>heroku create</tt>
+7. In the console <tt>git push heroku</tt>
+8. In the console <tt>heroku run rake db:migrate</tt>
 
-1. In the console <tt>heroku create</tt>
-2. In the console <tt>git push heroku</tt>
-3. In the console <tt>heroku run rake db:migrate</tt>
 
 == Use
 
